@@ -18,3 +18,5 @@ git branch -a will show all the hidden also
 git restore <filename> will undo all the changes before staging
 if we want to unstage something git restore -- stagged <filename>
 we generally use "." to include all
+git stash is used to store the uncommit the changes in stash file
+git stash pop is used to retrive that previous file
