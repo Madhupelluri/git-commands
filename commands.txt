@@ -20,3 +20,4 @@ if we want to unstage something git restore -- stagged <filename>
 we generally use "." to include all
 git stash is used to store the uncommit the changes in stash file
 git stash pop is used to retrive that previous file
+git diff will show the changes that not stagged yet
