@@ -1,0 +1,20 @@
+for intailizing the git local repo - git init
+in vs code to create a file using terminal use *echo "data" > <file>* we use >> to overwrite the data
+git add is used to add the file in staging in our local repository
+git add . is used add all the files into local repo
+git commit -m "message" is used to commit changes into our local repo
+echo "# git-commands" >> README.md
+git branch -M main saying our branch is main not master
+git remote add origin https://github.com/Madhupelluri/git-commands.git this is used to connect our local repo to github remote
+git push -u origin main now we can pus our commits into githib remote 
+git push when we want to push the commits for only the first commit ,then after we only use git push
+git status is use to check for the status of our local repo not remote
+git clone <https> is used to clone the github repo into local machine
+cd <file> we will go into that file
+git branch <branch name> to create branch
+git branch will display all the branches we have till now
+git switch <branchname> will switch the branch
+git branch -a will show all the hidden also
+git restore <filename> will undo all the changes before staging
+if we want to unstage something git restore -- stagged <filename>
+we generally use "." to include all
