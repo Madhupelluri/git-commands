@@ -1,23 +1,294 @@
-for intailizing the git local repo - git init
-in vs code to create a file using terminal use *echo "data" > <file>* we use >> to overwrite the data
-git add is used to add the file in staging in our local repository
-git add . is used add all the files into local repo
-git commit -m "message" is used to commit changes into our local repo
-echo "# git-commands" >> README.md
-git branch -M main saying our branch is main not master
-git remote add origin https://github.com/Madhupelluri/git-commands.git this is used to connect our local repo to github remote
-git push -u origin main now we can pus our commits into githib remote 
-git push when we want to push the commits for only the first commit ,then after we only use git push
-git status is use to check for the status of our local repo not remote
-git clone <https> is used to clone the github repo into local machine
-cd <file> we will go into that file
-git branch <branch name> to create branch
-git branch will display all the branches we have till now
-git switch <branchname> will switch the branch
-git branch -a will show all the hidden also
-git restore <filename> will undo all the changes before staging
-if we want to unstage something git restore -- stagged <filename>
-we generally use "." to include all
-git stash is used to store the uncommit the changes in stash file
-git stash pop is used to retrive that previous file
-git diff will show the changes that not stagged yet
+# 🚀 Git Commands Cheat Sheet
+
+---
+
+## 🔰 1. Initialize Repository
+
+```bash
+git init
+```
+
+Initialize a new Git repository
+
+```bash
+echo "# Project" > README.md
+```
+
+Create a file with content
+`>` overwrite, `>>` append
+
+---
+
+## 📂 2. Staging & Committing
+
+```bash
+git add file.txt
+```
+
+Add specific file to staging
+
+```bash
+git add .
+```
+
+Add all files
+
+```bash
+git commit -m "message"
+```
+
+Commit changes
+
+```bash
+git status
+```
+
+Check repository status
+
+---
+
+## 🌐 3. Remote Repository
+
+```bash
+git remote add origin <repo-url>
+```
+
+Connect local repo to remote
+
+```bash
+git remote -v
+```
+
+View remote URLs
+
+```bash
+git push -u origin main
+```
+
+First push (set upstream)
+
+```bash
+git push
+```
+
+Push changes
+
+```bash
+git pull
+```
+
+Fetch + merge latest changes
+
+---
+
+## 🔽 4. Clone Repository
+
+```bash
+git clone <repo-url>
+cd <folder>
+```
+
+---
+
+## 🌿 5. Branching
+
+```bash
+git branch
+```
+
+List branches
+
+```bash
+git branch <name>
+```
+
+Create branch
+
+```bash
+git checkout <name>
+```
+
+Switch branch
+
+```bash
+git checkout -b <name>
+```
+
+Create + switch
+
+```bash
+git switch <name>
+```
+
+Modern switch
+
+```bash
+git branch -a
+```
+
+Show all branches
+
+```bash
+git branch -d <name>
+```
+
+Delete branch
+
+```bash
+git branch -M main
+```
+
+Rename branch
+
+```bash
+git branch --show-current
+```
+
+Current branch
+
+---
+
+## 🔄 6. Undo & Restore
+
+```bash
+git restore file.txt
+```
+
+Discard unstaged changes
+
+```bash
+git restore --staged file.txt
+```
+
+Unstage file
+
+```bash
+git restore .
+```
+
+Discard all changes
+
+---
+
+## 📦 7. Stash
+
+```bash
+git stash
+```
+
+Save uncommitted work
+
+```bash
+git stash pop
+```
+
+Restore and remove stash
+
+```bash
+git stash apply
+```
+
+Restore but keep stash
+
+```bash
+git stash list
+```
+
+View stashes
+
+```bash
+git stash drop
+```
+
+Delete stash
+
+---
+
+## 🔍 8. Inspect Changes
+
+```bash
+git diff
+```
+
+Unstaged changes
+
+```bash
+git diff --staged
+```
+
+Staged changes
+
+```bash
+git log
+```
+
+Full history
+
+```bash
+git log --oneline
+```
+
+Compact history
+
+```bash
+git log --oneline --graph --all --decorate
+```
+
+Visual commit graph
+
+---
+
+## 🧠 9. Reset & Revert
+
+```bash
+git reset file.txt
+```
+
+Unstage file (old way)
+
+```bash
+git reset --hard
+```
+
+Discard all changes (danger)
+
+```bash
+git revert <commit-id>
+```
+
+Undo commit safely
+
+---
+
+## 🎯 Git Workflow
+
+Working Directory → Staging Area → Repository
+
+```bash
+git add → git commit → git push
+```
+
+---
+
+## ⚡ Must-Know Commands
+
+```bash
+git checkout -b branch-name
+git stash
+git diff --staged
+git log --oneline --graph --all
+```
+
+---
+
+## 🚀 One-Line Summary
+
+* `add` → stage changes
+* `commit` → save changes
+* `push` → upload changes
+* `stash` → temporarily save work
+* `restore` → undo changes
+* `diff` → see changes
+* `log` → see history
+
+---
